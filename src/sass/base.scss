@@ -1,16 +1,18 @@
 html {
   box-sizing: border-box;
+  background-color: lightblue;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  
 }
 .container {
   width: 280px;
@@ -21,4 +23,14 @@ body {
   @media screen and (min-width: 1280px) {
     width: 1060px;
   }
+}
+
+.background-image {
+  background-image: url("https://miro.medium.com/max/3200/1*-FJDsWYx-uXGgtZrZUAWtg.jpeg");
+  position: relative;
+  width: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
